@@ -1,0 +1,12 @@
+<!--pages/news/news.wxml-->
+<block wx:for="{{ newsList }}" wx:key="index">
+  <view class="wrapper">
+  <view class="icon">
+    <image src="{{ item.img }}"></image>
+  </view>
+  <view class="info">
+    <view class="title">{{item.newsTitle}}</view>
+    <view class="message">{{item.message}}</view>
+  </view>
+</view>
+</block>

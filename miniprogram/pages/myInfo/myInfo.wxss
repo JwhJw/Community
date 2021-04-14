@@ -1,0 +1,46 @@
+.user-info {
+  width: 100%;
+  height: 200rpx;
+  background-color: #eee;
+  position: relative;
+  padding-top: 20rpx;
+}
+
+.user-info .user-img {
+  width: 180rpx;
+  height: 180rpx;
+  text-align: center;
+  line-height: 180rpx;
+  background-color: #fff;
+  float: left;
+  margin-left: 10rpx;
+}
+
+.user-info .info {
+  float: right;
+  width: 70%;
+  height: 180rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  margin-right: 20rpx;
+}
+
+.user-info .info .user-name {
+  height: 50%;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.user-info .info .person-info {
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.about {
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  background-color: #ddd;
+}

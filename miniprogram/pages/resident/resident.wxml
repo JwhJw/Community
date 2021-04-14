@@ -1,0 +1,7 @@
+<import src="/templates/myForm.wxml"></import>
+
+<view class="wrapper">
+  <form catchsubmit="submit" catchreset>
+    <template is="myForm" data="{{question,index}}"></template>
+  </form>
+</view>

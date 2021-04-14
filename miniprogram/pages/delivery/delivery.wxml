@@ -1,0 +1,41 @@
+<!--pages/delivery/delivery.wxml-->
+<view class="delivery">
+  <form catchsubmit="submit">
+    <view class="question">
+      <image
+        src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5joqDkj3zAmPBil7t55yaO1iVZcrz3x4QSn7lzwzGTE83zzfMmNRRVjSs*dC5*BtJqzB70MgTQxBHw*0xeMA8ec!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+      </image>
+      <text>取件地址</text>
+      <input type="text" bindblur="addressChange" />
+    </view>
+    <view class="question">
+      <image
+        src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5vkpNCTCz3HmbZvDW925PNEsJtuA7WRHLsh7lsD4J0ETpxXizO4P44D1QLQ3N3O.mIxRMp9WWQ5AlgF66zPqUa0!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+      </image>
+      <text>取件号</text>
+      <input type="text" bindblur="numberChange" />
+    </view>
+    <view class="question">
+      <image
+        src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5vkpNCTCz3HmbZvDW925PNEopRcKO5SI8EGxhEWTVcBnlyaYG1v0sGM*moMQq3N19wZpjxUq73Gza5pvH2NqPHc!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+      </image>
+      <text>收件人姓名</text>
+      <input type="text" bindblur="nameChange" />
+    </view>
+    <view class="question">
+      <image
+        src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5joqDkj3zAmPBil7t55yaO22QeA4wHWFV3g*Tg5S4kGOH6hXTV8vdtKATEXaOn61hotyElekg22RgkE*ycHh.PQ!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+      </image>
+      <text>收件人电话</text>
+      <input type="number" bindblur="phoneChange" />
+    </view>
+    <view class="question">
+      <image
+        src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5vkpNCTCz3HmbZvDW925PNH8oDgSHTHjKJ*SUxlSbdQSPxbITvaWwa9GcZnDG.NKX1ah3FCnO8IQnP0aiMamHrU!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+      </image>
+      <text>收件人地址</text>
+      <input type="text" bindblur="deliveryChange" />
+    </view>
+    <button form-type="submit">下单</button>
+  </form>
+</view>

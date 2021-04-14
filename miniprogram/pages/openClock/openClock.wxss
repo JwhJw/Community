@@ -1,0 +1,74 @@
+page {
+  color: #525252;
+}
+.map {
+  width: 100%;
+  height: 500rpx;
+}
+
+.map map {
+  width: 100%;
+  height: 100%;
+}
+
+.match-type {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  /* background-color: #eee; */
+  display: flex;
+}
+
+.match-type .map-match,
+.match-type .near-worker {
+  width: 50%;
+  text-align: center;
+  border: 1rpx solid #eee;
+  font-size: 28rpx;
+  color: #555;
+}
+.info-form {
+  width: 100%;
+  /* background-color: #ddd; */
+}
+.info-form .item {
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  /* overflow: hidden; */
+  align-content: center;
+  border-bottom: 1rpx solid#eee;
+}
+.item image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+  margin-top: 25rpx;
+}
+.item input{
+  margin-top: 30rpx;
+  width:100%;
+}
+.item picker {
+  width: 100%;
+}
+.item .chooseTime {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.item .chooseTime .title {
+  width: 150rpx;
+  text-align: center;
+}
+.item .chooseTime picker {
+  width: 40%;
+}
+button{
+  margin-top: 20rpx;
+  color: #525252;
+}

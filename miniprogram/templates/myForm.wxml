@@ -1,0 +1,37 @@
+<template name="myForm">
+  <view wx:for="{{ question }}" wx:key="index" wx:for-index="questionId" class="content">
+    <block wx:if="{{item.type == 'input'}}">
+      <view class="my-imput">
+        <view class="title">{{item.title}}</view>
+        <input type="{{item.inputType}}" placeholder-class="placeholder" placeholder="{{item.placeholder}}"
+          bindblur="{{item.myEvent}}" />
+      </view>
+    </block>
+    <block wx:elif="{{item.type=='radio'}}">
+      <view class="title">{{item.title}}</view>
+      <radio-group bindchange="{{item.myEvent}}">
+        <radio wx:for="{{item.choose}}" wx:for-item="choose" wx:for-index="id" value="{{!!id}}" wx:key="id">{{choose}}
+        </radio>
+      </radio-group>
+    </block>
+    <block wx:elif="{{item.type=='picker'}}">
+      <view class="title">{{item.title}}</view>
+      <picker bindchange="{{item.myEvent}}" value="{{index}}" range="{{item.array}}">
+        <view class="picker">
+          {{item.array[index]}}
+        </view>
+      </picker>
+    </block>
+    <block wx:elif="{{item.type=='checkbox'}}">
+      <view class="title">{{item.title}}</view>
+      <checkbox-group bindchange="{{item.myEvent}}">
+        {{item.choose}}
+        <checkbox wx:for="{{item.chooseList}}" wx:for-item="choose" wx:for-index="chooseIndex" wx:key="choose" checked="{{isChecked[chooseIndex]}}"
+          value="{{chooseIndex}}">
+          {{choose}}
+        </checkbox>
+      </checkbox-group>
+    </block>
+  </view>
+  <button type="primary" form-type="submit">提交</button>
+</template>

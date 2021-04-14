@@ -1,0 +1,43 @@
+<!--pages/shopping/shopping.wxml-->
+<view class="location" bindtap="getPosition">{{position}}</view>
+<!-- 轮播图 -->
+<view class="swiper-wrapper">
+  <swiper autoplay interval="3000" circular>
+    <swiper-item>
+      <navigator>
+        <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2738547540,1125930618&fm=26&gp=0.jpg">
+        </image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/resident/resident">
+        <image
+          src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180519%2Fe3238f1fe9e844afa91d1292d40b7871.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619249355&t=392b739495a6c60dcebc82e8f9eb13a0ß">
+        </image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 社区打卡 -->
+<view class="nav">
+  <view class="title">社区服务</view>
+  <view class="service">
+    <block wx:for="{{ provideService }}" wx:key="index">
+      <navigator url="{{item.url}}">
+        <view class="type">
+          <view class="type-img">
+            <image src="{{ item.img }}">
+            </image>
+          </view>
+          <view class="type-text">{{ item.text }}</view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<!-- 社区通知  -->
+<view class="notice">
+  <view class="title">社区通知</view>
+</view>

@@ -1,0 +1,57 @@
+<view class="open-clock">
+  <view class="info-form">
+    <form catchsubmit="handleSubmit">
+      <view class="item position" bindtap="getPosition">
+        <image
+          src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5ivrT28WY5LWh3SalWrEdYjmPZFYpr0cGxoXcZYH0Xq.9hs1VLkaW3*DZv.gUL2jVwsWlxrj9bpAEIebUSeMp2o!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+        </image>
+        <text>{{position}}</text>
+      </view>
+      <view class="item address">
+        <image
+          src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5ivrT28WY5LWh3SalWrEdYhSeTd94WYfQfeaA7sLshI8SZer.jMg120NIYIUbARpk5scAWSnPhj7ucvi2cXVqyg!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+        </image>
+        <input bindblur="addressChange" type="text" placeholder="输入门牌号" />
+      </view>
+      <view class="item type">
+        <image
+          src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5ivrT28WY5LWh3SalWrEdYg2AqN4mWj2FCUlE2tUedqLPPnVLDR8A0UrnsLF3xuI8AhsK.8rQQoEVyDm5MeBdlM!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+        </image>
+        <picker bindchange="typeChange" value="{{typeIndex}}" range="{{serviceType}}">
+          <view class="picker">
+            {{serviceType[typeIndex]}}
+          </view>
+        </picker>
+      </view>
+      <view class="item time">
+        <image
+          src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5ivrT28WY5LWh3SalWrEdYjSfgqJzyjKyKmOsirjkL5JfX015*lU9FaIPhw3gsOBTpx9*sFWKXV7tRZbydODCDg!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+        </image>
+        <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots" />
+        <view class="chooseTime">
+          <view wx:if="{{isnow}}" class="now">现在</view>
+          <block wx:else class="apponitment">
+            <text class="title">预约</text>
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2025-09-01" bindchange="bindDateChange">
+              <view class="picker">
+                {{date}}
+              </view>
+            </picker>
+            <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+              <view class="picker">
+                {{time}}
+              </view>
+            </picker>
+          </block>
+        </view>
+      </view>
+      <view class="item message">
+        <image
+          src="http://m.qpic.cn/psc?/V54WwwZG0HUY0o2IHMEq4PrCf92cfZAO/ruAMsa53pVQWN7FLK88i5m6uiYiMluNsrGiphHzyt9PW.fLUx4AqV0yrysaAwfb0zVxk.cd0VochaaD4QcYyIVA0lE4MuJ4MocYs.BHw.BA!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5">
+        </image>
+        <input bindblur="messageChange" type="text" placeholder="（选填）请添加备注" />
+      </view>
+      <button form-type="submit">下单</button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<template name="cover">
+  <icon class="icon-box-img container" type="success" size="60"></icon>
+  <view class="container" >
+    下单成功，点击查看订单
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<!-- pages/clockIn/clockIn.wxml-->
+<!-- 自定义模版 -->
+<import src="/templates/myForm.wxml"></import>
+
+<view class="wrapper" >
+  <form catchsubmit="handleSubmit">
+    <template is="myForm" data="{{question}}"></template>
+  </form> 
+</view>
+
+
+

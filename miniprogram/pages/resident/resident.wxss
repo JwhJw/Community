@@ -1,0 +1,33 @@
+page {
+  background-color: #ddd;
+}
+.wrapper {
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.wrapper .content {
+  padding: 20rpx;
+  border-bottom:1rpx solid #eee
+}
+.wrapper .content:last-of-type{
+  border-bottom:none;
+  margin-bottom: 20rpx;
+}
+.placeholder {
+  font-size: 90%;
+  color: #bbb;
+}
+/* radio-group {
+  display: flex;
+} */
+radio {
+  width: 50%;
+}
+.title {
+  margin-bottom: 20rpx;
+}
+.picker {
+  font-size: 90%;
+}
